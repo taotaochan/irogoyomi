@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>いろごよみ</title>
+<style>
+  :root { --bg: #ffffff; --fg: #1f2328; --muted: #59636e; --link: #0969da; --line: #d1d9e0; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0d1117; --fg: #e6edf3; --muted: #9198a1; --link: #4493f8; --line: #3d444d; }
+  }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.75 -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 40px 16px 56px; }
+  h1 { font-size: 1.8em; line-height: 1.3; margin: 0 0 8px; }
+  h2 { font-size: 1.2em; margin: 36px 0 8px; padding-bottom: 4px; border-bottom: 1px solid var(--line); }
+  a { color: var(--link); }
+  .lead { color: var(--muted); margin-top: 0; }
+  .note { color: var(--muted); font-size: 0.875em; margin-top: 36px; }
+  footer { margin-top: 24px; padding-top: 16px; border-top: 1px solid var(--line); font-size: 0.875em; }
+</style>
+</head>
+<body>
+<main>
+  <h1>いろごよみ</h1>
+  <p class="lead">Google カレンダーの予定を、手帳のような月表示で iPhone のホーム画面に出すウィジェットです。</p>
+
+  <ul>
+    <li>Google カレンダーで予定ごとに付けた色を、そのまま表示します</li>
+    <li>共有カレンダーと祝日のカレンダーも、Google カレンダーで表示にしているものはすべて出します</li>
+    <li>複数日の予定は帯でつながり、入りきらない日は「+N」で件数を表示します</li>
+  </ul>
+
+  <h2>Google のデータの扱い</h2>
+  <p>サインインした Google アカウントのカレンダーを、読み取り専用（<code>calendar.readonly</code>）で読み込みます。読み込んだ予定は端末の中で表示に使うだけで、開発者や第三者のサーバーには送りません。詳しくは<a href="privacy.html">プライバシーポリシー</a>をご覧ください。</p>
+
+  <h2>お問い合わせ</h2>
+  <p>メール: <a href="mailto:solfege0@gmail.com">solfege0@gmail.com</a><br>
+  または <a href="https://github.com/taotaochan/irogoyomi/issues">GitHub の Issues</a> からお願いします。</p>
+
+  <h2>English</h2>
+  <p>Irogoyomi (いろごよみ) is an iOS home screen widget that shows your Google Calendar events in a month view, keeping the color of each event. It reads your calendars with read-only access (<code>calendar.readonly</code>) and uses the data only on your device. See the <a href="privacy.html#english">Privacy Policy</a>.</p>
+  <p>Contact: <a href="mailto:solfege0@gmail.com">solfege0@gmail.com</a> or <a href="https://github.com/taotaochan/irogoyomi/issues">GitHub Issues</a>.</p>
+
+  <p class="note">個人が作成したアプリで、Google とは関係ありません。Google カレンダーは Google LLC の商標です。<br>
+  This is an independent app and is not affiliated with Google. Google Calendar is a trademark of Google LLC.</p>
+
+  <footer><a href="privacy.html">プライバシーポリシー / Privacy Policy</a></footer>
+</main>
+</body>
+</html>
